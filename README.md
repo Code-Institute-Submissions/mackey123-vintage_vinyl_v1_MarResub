@@ -119,13 +119,21 @@ First Time and Returning Users
 All users of this site will be looking for similar things in this project as outlined below:
 Navigate easy through all devices and have all areas of website responsive.
 To be able to view/preview the site before creating an account.
+
 Have clear Registration and Log In pages.
-To be able to view book reviews
+
+To be able to view through the vinyl genres avaialble.
 Have the ability to add their own reviews and keep a record of them.
+
 To be able to edit and delete reviews posted.
+
 For the review information to be clear and concise.
+
+
 To be able to securely log out of the site.
-Find links to other sites and ares to purchase books.
+
+Find links to other sites and ares to purchase vinyls.
+
 To be provided with contact information and social links.
 To store date securely
 Design
@@ -188,7 +196,7 @@ CSS
 HTML
 Markdown
 Python
-Flask
+DJANGO
 Pymongo
 Testing
 To test my code I did it in the following way
