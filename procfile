@@ -1,0 +1,1 @@
+web: gunicorn vintage_vinyl_v1.wsgi

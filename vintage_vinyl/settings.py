@@ -19,7 +19,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/horoduction secret!
-SECRET_KEY = 'p@ei#69*b*zz3u4yie-$()@cy^lwto/deployment/checklist/
+SECRET_KEY = 'p@ei#69*b*zz3u4yie-$()@cy^lwto/deployment/checklist'
 
 # SECURITY WARNING: keep the secret key used in p(+x9&@6ypx+r0lm(3%_9hr7'
 
