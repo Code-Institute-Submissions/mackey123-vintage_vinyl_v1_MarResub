@@ -1,1 +1,1 @@
-web: gunicorn vintage_vinyl.wsgi
+web: gunicorn vintage_vinyl.wsgi:application      
