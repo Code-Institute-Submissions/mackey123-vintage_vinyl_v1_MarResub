@@ -26,7 +26,7 @@ SECRET_KEY = 'p@ei#69*b*zz3u4yie-$()@cy^lwto/deployment/checklist'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'art-ial-app.herokuapp.com']
+ALLOWED_HOSTS = ['vintage-vinyl-app.herokuapp.com']
 
 
 # Application definition
