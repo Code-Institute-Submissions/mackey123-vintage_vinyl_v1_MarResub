@@ -61,6 +61,16 @@ body {
 }
 
 
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}
+
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -93,3 +103,5 @@ body {
         padding-top: 164px;
     }
 }
+
+

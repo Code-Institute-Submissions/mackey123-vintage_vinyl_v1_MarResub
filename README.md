@@ -110,40 +110,47 @@ Happy coding!
 
 
 
-Welcome
+# Welcome
+
 This is the Readme for Vintage Vinyl website! I hope to provide all the necessary information and and answer any questions you may have. I decided to take the approach of making the website first on normal broswer format as in a laptop or computer, then styled and added what was needed for tablet and mobile devices. It is responsive on all devices, view the website here : 
 
-User Experience (UX)
-User Stories
-First Time and Returning Users
+# User Experience (UX)
+
+## User Stories
+
+### First Time and Returning Users
+
 All users of this site will be looking for similar things in this project as outlined below:
-Navigate easy through all devices and have all areas of website responsive.
-To be able to view/preview the site before creating an account.
 
-Have clear Registration and Log In pages.
+- Navigate easy through all devices and have all areas of website responsive.
 
-To be able to view through the vinyl genres avaialble.
-Have the ability to add their own reviews and keep a record of them.
+ - To be able to view/preview the site before creating an account.
 
-To be able to edit and delete reviews posted.
+ - Have clear Registration and Log In pages.
 
-For the review information to be clear and concise.
+ - To be able to view through the vinyl genres avaialble.
+   Have the ability to add their own reviews and keep a record of them.
+
+- To be able to edit and delete reviews posted.
+
+- for the review information to be clear and concise.
 
 
-To be able to securely log out of the site.
+- To be able to securely log out of the site.
 
-Find links to other sites and ares to purchase vinyls.
+- Find links to other sites and ares to purchase vinyls.
 
-To be provided with contact information and social links.
-To store date securely
-Design
-Typograpghy
+- To be provided with contact information and social links.
+- To store date securely
+
+# Design
+## Typograpghy
 For my typograpghy I used a Google font of Be Vietnam Pro with a fallback of sans serif.
-Imagery
+## Imagery
 I used the one image of a fireplace and armchair for the background
-Colour Scheme
+## Colour Scheme
 I used a colour scheme involving the materilize blue of "#64b5f6 blue lighten-2" along with white and different variations such as "#7bc1fa" and "#0381c0;" for when a anchor is hovered over.
-Wireframes
+## Wireframes
 For the design of my wireframes I used Balsamic, You can find the link to the site here!
 I will also include screenshots below.
 
@@ -153,7 +160,7 @@ wireframe
 
 wireframe
 
-Features
+# Features
 Forms and contact section to allow users to give feedback.
 
 The site is responsive and can be viewed on all viewports.
@@ -182,62 +189,67 @@ Contact section to allow users to get in touch and email available.
 
 all links take the user to a new page and links are related the book review websites above the footer.
 
-Future features
+# Future features
 I would also like to include a questionare about peoples favourite books and sites
 
 Possibly add a game in the future to add even more interactivity.
 
 Allow the admin to delete book reviews or modiy them more so.
 
-Technologies used
-languages used
-Javascript
-CSS
-HTML
-Markdown
-Python
-DJANGO
-Pymongo
-Testing
-To test my code I did it in the following way
-I ran the code through the different validators for each of my languages.
-i. I would copy sections of code so as not to do a whole page and fix any problems within the section first.
+# Technologies used
+## languages used
+ ### Javascript
+ ### CSS
+ ### HTML
+ ### Markdown
+ ###  Python
+### DJANGO
+### Pymongo
 
-ii. Paste the code into the correct tester.
+ # Testing
 
-iii. Once results and errors (if present) are visble, examine and correct the changes needed.
+## To test my code I did it in the following way
+- I ran the code through the different validators for each of my languages.
+- I would copy sections of code so as not to do a whole page and fix any problems within the section first.
 
-iv. Repeated the same process for all the languages.
+- Paste the code into the correct tester.
 
-I would browse through the site on all the different types of view port to ensure it worked well.
-i. I would browse through all of the site on the mobile and tablet viewports.
+- Once results and errors (if present) are visble, examine and correct the changes needed.
 
-ii. I check all the links to make sure they worked correctly, I looked at the text content to make sure it came out the way intended.
+- Repeated the same process for all the languages.
 
-iii. I would then make sure that all the correct text is visble and not too small, then I would interact with all the interactive elements to make sure they reacted correctly.
+## I would browse through the site on all the different types of view port to ensure it worked well.
 
-iv. Open google tools and view any errors present.
+- I would browse through all of the site on the mobile and tablet viewports.
 
-v. Correct the changes if needed.
+- I check all the links to make sure they worked correctly, I looked at the text content to make sure it came out the way intended.
 
-I also viewed the site on different browsers to see how it reacted.
-i. I would open up a diffrent browser be it be it mozilla,internet explorer or google.
+- I would then make sure that all the correct text is visble and not too small, then I would interact with all the interactive elements to make sure they reacted correctly.
 
-ii. I would interact and click all the links available to make sure they worked.
+- Open google tools and view any errors present.
 
-iii. Interact with all interactive elements and code to make sure it ran they way its supposed to.
+- Correct the changes if needed.
 
-Security Testing
+ ## I also viewed the site on different browsers to see how it reacted.
+
+- I would open up a diffrent browser be it be it mozilla,internet explorer or google.
+
+- I would interact and click all the links available to make sure they worked.
+
+- Interact with all interactive elements and code to make sure it ran they way its supposed to.
+
+## Security Testing
 All pages were tested to make sure that no unauthorised users can access pages they should not have access to. If a user is logged out, they have no access to any pages they should not have access to. All admin only pages can only be accessed by the admin. Redirects are all working as expected, with correct flash messages present.
 
-Testing user stories
-Navigate easy through all devices and have all areas of website responsive.
-The site is fully responsive regardless of device used, and the navbar is clear and easy to navigate through on both mobile and desktop/laptop devices.
+## Testing user stories
 
-To be able to view/preview the site before creating an account.
-Users will have full access to the book reviews created before registering an account they may not edit or delete untill they have a account.
+- Navigate easy through all devices and have all areas of website responsive.
+- The site is fully responsive regardless of device used, and the navbar is clear and easy to navigate through on both mobile and desktop/laptop devices.
 
-Have clear Registration and Log In pages.
+- To be able to view/preview the site before creating an account.
+Users will have full access to the vinyls available on site, they may not purchase until they have a account.
+
+- Have clear Registration and Log In pages.
 The registration and log in pages are clearly marked within the navbar, they are also linked on the home page, and are set as redirections for certain actions on the site if the user is not logged in.
 
 To be able to view book reviews
