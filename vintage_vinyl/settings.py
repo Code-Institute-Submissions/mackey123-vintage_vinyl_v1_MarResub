@@ -8,7 +8,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
+
 import os
+
+
 
 # added due to
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
@@ -17,11 +20,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-# Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/horoduction secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
-
-# SECURITY WARNING: keep the secret key used in p(+x9&@6ypx+r0lm(3%_9hr7'
+SECRET_KEY = os.environ.get('SECRET_KEY', ''),
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -47,12 +47,6 @@ INSTALLED_APPS = [
     'home',
     'products',
     'bag',
-    'checkout',
-    'profiles',
-
-    # Other
-    'crispy_forms',
-    'storages',
 ]
 
 MIDDLEWARE = [
