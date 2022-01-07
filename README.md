@@ -11,7 +11,7 @@ This is the Readme for Vintage Vinyl website! I hope to provide all the necessar
 
 ## User Stories
 
-### First Time and Returning Users
+### 
 
 All users of this site will be looking for similar things bar the admin which can be seen after  the normal users are as follows :
 
@@ -24,24 +24,23 @@ All users of this site will be looking for similar things bar the admin which ca
  - To be able to view through the vinyl genres avaialble.
    Have the ability to add their own reviews and keep a record of them.
 
-- To be able to edit and delete reviews posted.
+- To be able to edit and delete procust via the admin page .
 
-- for the review information to be clear and concise.
-
+- for the vinyl information to be clear and concise.
 
 - To be able to securely log out of the site.
 
-- Find links to other sites and ares to purchase vinyls.
+- To purchase items successfully 
 
-- To be provided with contact information and social links.
+- To be able to pay with a Credit or Debit card securely.
+
 - To store date securely
 
-## Admin User Strories 
+- To be able to search items available
 
--
--
--
--
+
+
+
 
 # Design
 
@@ -66,19 +65,23 @@ wireframe
 wireframe
 
 # Features
-Forms and contact section to allow users to give feedback.
+- Search bar for people to search products.
 
-The site is responsive and can be viewed on all viewports.
+- Responsive on all devices 
 
-Store users data and allow them to create a account.
+- Forms and contact section to allow users to give feedback.
 
-Can add a book Review
+- The site is responsive and can be viewed on all viewports.
 
-Add a Book Review
+- Store users data and allow them to create a account.
 
-Edit a book review
+- Can add a book Review
 
-Delete a book review
+- Add a Vinyl product.
+
+- Edit a vinyl product through admin.
+
+- Delete a product with admin.
 
 Register a Accout
 
@@ -95,7 +98,7 @@ Contact section to allow users to get in touch and email available.
 all links take the user to a new page and links are related the book review websites above the footer.
 
 # Future features
-I would also like to include a questionare about peoples favourite books and sites
+I would also like to include a questionare about peoples favourite albums and sites.
 
 Possibly add a game in the future to add even more interactivity.
 
@@ -106,27 +109,41 @@ Allow the admin to delete book reviews or modiy them more so.
 ## languages used
 
  ### Javascript
- -
- -
- -
+ - Used for all script files.
+
+ ### JQuery
+
+ - Used to shorten all Javascript code
+
  ### CSS
- -
- -
+ - Used to style all elemets of the site and for media queries.
+ 
+
  ### HTML
- -
+ - Used for main structure/text of site
+
  ### Markdown
- -
+ - Used for this Readme.
+
  ###  Python
- -
+ - used for all .py files and most of backend development.
+
 ### DJANGO
--
-### Pymongo
--
+- Framework which admina and whole site is based off.
+
 
 ## Database
-- Used 
+
+### Postgres
+- Used for deployment to heroku.
+
+### db squlite
+- Used as a realtional database.
 
 ### Database diagram 
+
+#### 
+- For my data base I sketched a quick diagram 
 
 
  # Testing
@@ -268,6 +285,21 @@ To deploy my Project to Github do it following these steps
 - Finally, go back to the “Deploy” tab, and scroll down to “Automatic deploys”. Click on “Enable Automatic Deploys” then “Deploy Branch”. The app will now be built and upon completion, you will receive a message saying “Your app was successfully deployed”.
 
 - You can now click on “Open App” which will launch the deployed app.
+
+
+## AWS
+
+- Created a new Amazon account and connect to amazon service AWS3 account are cloud based serve where the project media and staicfiles will be stored unto. At first, we locate S3 on amazon service then we create a bucket. While creating the bucket on S3, the note that public access must be all switched off to allow access for users.
+
+- Once we've created the bucket, we now can now click on it's properties and enable the Static Website Hosting option, so it can serve the purpose of hosting our static files, you will need to input an index.html and error.html before saving. Then we go into the created bucket Permissions and click into CORS configuration, this part already have a prefilled default config, All that is needed is just to write the default code and save the config.
+
+- Then we go into the bucket policy to allows access to the contents across all web and inside this we will put in here some code including arn address displayed at the top of the heading. Then we go into amazon IAM to allow identity and access management of our stored files and folder. In the IAM service, we add a new group for our application and then we set the policies to ALL Then it generates a downlaodable zip file containing ID and KEY for us to use for the newly added group. This ID and KEY as to be stored in an environment variable.
+
+- This then allows us to into our terminal window and install some settings Boto3 Django Storages
+
+- The Django Storages is passed into the installed apps in settings and also a custom_storage file is created to store credentials in environment variable. And once everything looks fine we can run python3 manage.py collectstatic. This will collect all the static files in our app including any changes that is made. N.B this command has to be run in the development(local) environment each time a change is been made in the static files/folder and your folder and files should display in your AWS S3 BUCKETS
+
+
 
 
 ## Run code locally
