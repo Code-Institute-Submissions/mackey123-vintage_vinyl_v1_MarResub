@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY', ''),
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['vintage-vinyl-app.herokuapp.com', 'localhost']
 
@@ -80,7 +80,7 @@ TEMPLATES = [
         },
     },
 ]
-MESSAGE_STORAGE = 'django.contrib.messages.stora'
+# MESSAGE_STORAGE = 'django.contrib.messages.storage'
 
 AUTHENTICATION_BACKENDS = (
     # Needed to login by username in Django admin, regardless of `allauth`

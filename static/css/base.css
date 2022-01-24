@@ -11,16 +11,16 @@ html {
 #products{
     color: blue;
     font-weight: 800;
-
 }
 
 #all-products-link:hover{
     color: blue;
     font-weight: 1200;
-    
-
 }
 
+ /* #body-products{
+    background-color: #794f4f;
+} */
 
 .message-container {
     position: fixed;

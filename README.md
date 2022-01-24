@@ -1,11 +1,9 @@
 
-
-
-
-
 # Welcome
 
 This is the Readme for Vintage Vinyl website! I hope to provide all the necessary information and and answer any questions you may have. I decided to take the approach of making the website first on normal broswer format as in a laptop or computer, then styled and added what was needed for tablet and mobile devices. It is responsive on all devices, view the website here : 
+
+This site was built using [GitHub Pages](https://pages.github.com/)
 
 # User Experience (UX)
 
@@ -22,7 +20,7 @@ All users of this site will be looking for similar things bar the admin which ca
  - Have clear Registration and Log In pages.
 
  - To be able to view through the vinyl genres avaialble.
-   Have the ability to add their own reviews and keep a record of them.
+   Have the ability to add their own reviews and keep a record of them through the superuser.
 
 - To be able to edit and delete procust via the admin page .
 
@@ -48,7 +46,7 @@ All users of this site will be looking for similar things bar the admin which ca
 For my typograpghy I used a Google font lato  with a fallback of sans serif.
 
 ## Imagery
-I used a image from Google of a Music shop for the backround image of the project 
+I used a image from Google of a Music shop for the backround image of the project, I also used the images for different album coverz all from google images by simply typing in the album.
 
 ## Colour Scheme
 I used a colour scheme involving the materilize blue of "#64b5f6 blue lighten-2" along with white and different variations such as "#7bc1fa" and "#0381c0;" for when a anchor is hovered over.
@@ -58,7 +56,7 @@ For the design of my wireframes I used Balsamic, You can find the link to the si
 
 I will also include screenshots below.
 
-wireframe
+[wireframe one](wireframe1.png)
 
 wireframe
 
