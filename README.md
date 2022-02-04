@@ -37,9 +37,6 @@ All users of this site will be looking for similar things bar the admin which ca
 - To be able to search items available
 
 
-
-
-
 # Design
 
 ## Typograpghy
@@ -190,42 +187,23 @@ Users will have full access to the vinyls available on site, they may not purcha
 - Have clear Registration and Log In pages.
 The registration and log in pages are clearly marked within the navbar, they are also linked on the home page, and are set as redirections for certain actions on the site if the user is not logged in.
 
-To be able to view book reviews
-All viewers can view the book reviews regardless of having a account or not.
+- To be able to view albums and make purchases.
+Once a user has registered an account, they will easily be able to buy vinyls or Albums
 
-Have the ability to add their own reviews and keep a record of them.
-Once a user has registered an account, they will easily be able to add their own book reviews. The add book review link is in the navbar so is accessible from any page in the site.
+- For the review information to be clear and concise.
+The Album information is laid out clearly and users are shown very quickly what the site is about.
 
-To be able to edit and delete reviews posted.
-Once a book review has been submitted, the user who created the review will be able to edit and delete the review easily. There are buttons that link the user to these pages from the book review itself only if they have a account and they added the book review.
-
-For the review information to be clear and concise.
-The review information is laid out clearly and users are shown very quickly what the site is about.
-
-To be able to securely log out of the site.
+- To be able to securely log out of the site.
 There is a clear Log Out header which appears in the navbar for users who are logged in .
 
-Find links to other sites and ares to purchase books.
-Under the book reviews on the base page there is links to other sites.
 
-To be provided with contact information and social links.
-There is a contact form under the "Contact Us" link in the navbar. We have also added a email in the footer if a user would like to contact that way.
+- To store date securely
+The admin and user are both able to store their data which is sent to a heorku datebase, the passwords are salted to add more security and stop brute forcing.
 
-To store date securely
-The admin and user are both able to store their data which is sent to a mongo datebase, the passwords are salted to add more security and stop brute forcing.
 
-Bugs, problems and points to consider
-After using the Google dev tools to help correct any mistakes in my code I came across a error of "Failed to load resource: the server responded with a status of 404 (Not Found)" so i added a "link rel="shortcut icon" href="#" into the head of my html pages.
-
-materialize was not allowing my side nav components to be clicked on to fix this I had to get rid of the opacity on my background image.
 
 I had to change a max width for containers to organise the styling of the code a lot more.
 
-Could not get a max lenght and min lenght on my book rating section so I left it as only a number input but a label for out of ten.
-
-Found only errors for my jinja templating in all my html.
-
-In future I would implement a better card system for the books without the use of materialize.
 
  # Deployment
 To deploy my Project to Github do it following these steps
@@ -350,8 +328,8 @@ If you wish to contribute to this website you can Fork it without affecting the 
  ### You can get more of this information in more detail here: (https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
 
- ## Known Bugs
- -
+ ## Known Bugs and Problems
+ - The biggest and most troublesome challenge I had with this project happened after I had to re-open my workspace due to inactivity. This then allowed the update that Gitpod had on the 7th of December. This caused our requirements.txt file to be courrupted and made the CI template no longer useable. I had to re-install all of django and its dependancies and then I had to recreate a new admin and add all my products again along with making migrations. This was by far the problem that set me back the most as I had to redo this multiple times, if my workspace closed at all it had to be re-done. My workspace had dissapeard from Gitpod a week ago and I had to go through these steps again.
  -
  -
  -
@@ -423,7 +401,10 @@ https://extendsclass.com/python-tester.html
 - used to correct python
 
 Acknowledgements 
--
--
--
--
+-  Firt my mentor Samantha Megan, always givesa great advise and insights!
+
+- The Code Institute!
+
+- The community on slack always a great help!
+
+- The lovely Tutors who time and time helped me a great deal during this project!
