@@ -81,6 +81,7 @@ form.addEventListener('submit', function(ev) {
                     }
                 }
             },
+            
             shipping: {
                 name: $.trim(form.full_name.value),
                 phone: $.trim(form.phone_number.value),
@@ -107,11 +108,11 @@ form.addEventListener('submit', function(ev) {
                 card.update({ 'disabled': false});
                 $('#submit-button').attr('disabled', false);
             } else {
+                
                 if (result.paymentIntent.status === 'succeeded') {
                     form.submit();
                 }
             }
-
         });
     }).fail(function () {
         // just reload the page, the error will be in django messages
