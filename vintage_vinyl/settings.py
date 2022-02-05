@@ -116,6 +116,7 @@ LOGIN_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'vintage_vinyl.wsgi.application'
 
 
+
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
@@ -206,5 +207,5 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
-STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', 'whsec_tjjcLHjy0hLtquxLuFyGZu51VzKEkQW6')
 DEFAULT_FROM_EMAIL = 'vintage_vinyl@example.com'
