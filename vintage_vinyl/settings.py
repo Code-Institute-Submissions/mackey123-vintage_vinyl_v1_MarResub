@@ -20,7 +20,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-# See https://docs.djangoproject.com/en/3.0/horoduction secret!
+# See https://docs.djangoproject.com/en/3.0/horoduction
 SECRET_KEY = os.environ.get('SECRET_KEY', ''),
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -30,9 +30,7 @@ ALLOWED_HOSTS = ['vintage-vinyl-app.herokuapp.com', 'localhost']
 
 
 
-
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -80,7 +78,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',  #  required by allauth
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -93,7 +91,7 @@ TEMPLATES = [
         },
     },
 ]
-# MESSAGE_STORAGE =  'django.contrib.messages.storage'
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = (
     # Needed to login by username in Django admin, regardless of `allauth`
@@ -117,11 +115,6 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'vintage_vinyl.wsgi.application'
 
-
-
-# Database
-# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
@@ -136,7 +129,6 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
-
 
 
 # Password validation
@@ -183,6 +175,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 if 'USE_AWS' in os.environ:
+    # Cache control	
+    AWS_S3_OBJECT_PARAMETERS = {	
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',	
+        'CacheControl': 'max-age=94608000',	
+    }
 
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'vintage-vinyl-app'
@@ -209,5 +206,5 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
-STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', 'whsec_tjjcLHjy0hLtquxLuFyGZu51VzKEkQW6')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET','whsec_tjjcLHjy0hLtquxLuFyGZu51VzKEkQW6')
 DEFAULT_FROM_EMAIL = 'vintage_vinyl@example.com'

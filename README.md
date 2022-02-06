@@ -352,17 +352,18 @@ If you wish to contribute to this website you can Fork it without affecting the 
  ## Known Bugs and Problems
  - The biggest and most troublesome challenge I had with this project happened after I had to re-open my workspace due to inactivity. This then allowed the update that Gitpod had on the 7th of December. This caused our requirements.txt file to be courrupted and made the CI template no longer useable. I had to re-install all of django and its dependancies and then I had to recreate a new admin and add all my products again along with making migrations. This was by far the problem that set me back the most as I had to redo this multiple times, if my workspace closed at all it had to be re-done. My workspace had dissapeard from Gitpod a week ago and I had to go through these steps again.
 
- - I also had to add fav icon erorr..
+ - I also had to add fav icon error which required a simple fix of just adding <link rel="stylesheet" href="{% static 'css/base.css' %}"> to my head element links.
 
- -
- -
+ - I experienced my CSS not been applied to my live site when I deployed from herokyu the sewcond time, to fix this I had to first chekc my AWS Bucket and make sure everything was up to date which it was. I then had to check my heroku logs which informed me that it was my database.url not havebeen exported. This then allowed my CSS to be appplid Once it was successfully exported. 
+
+ - media not been apllied bug 
  -
  -
 
 ## Credit
 First I would like to thank my mentor Samantha for all the help and then the Code Institute! I would also like to thank all the tutors you have all been amazing and lastly but not least anyone on Slack who reached out and helped with my many problems.
 
-- I would aslo like to credit ckz8780 and the Code Institute as the whole project is based of the Botique Ado project.
+- I would aslo like to credit ckz8780 Chris and the Code Institute as the whole project is based of the Botique Ado project.
 
 ### Credit (links)
 

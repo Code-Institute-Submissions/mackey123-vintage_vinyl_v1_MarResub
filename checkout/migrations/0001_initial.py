@@ -33,6 +33,7 @@ class Migration(migrations.Migration):
                 ('grand_total', models.DecimalField(decimal_places=2, default=0, max_digits=10)),
             ],
         ),
+        
         migrations.CreateModel(
             name='OrderLineItem',
             fields=[

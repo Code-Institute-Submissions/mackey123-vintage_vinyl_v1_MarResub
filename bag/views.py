@@ -3,7 +3,7 @@ from django.contrib import messages
 
 from products.models import Product
 
-# Create your views here.
+
 
 def view_bag(request):
     """ A view that renders the bag contents page """
@@ -85,6 +85,7 @@ def remove_from_bag(request, item_id):
         if 'product_size' in request.POST:
             size = request.POST['product_size']
         bag = request.session.get('bag', {})
+
 
         if size:
             del bag[item_id]['items_by_size'][size]
