@@ -20,9 +20,10 @@ All users of this site will be looking for similar things bar the admin which ca
  - Have clear Registration and Log In pages.
 
  - To be able to view through the vinyl genres avaialble.
-   Have the ability to add their own reviews and keep a record of them through the superuser.
 
-- To be able to edit and delete procust via the admin page .
+  - Have the ability to add their own products and keep a record of them through the superuser.
+
+- To be able to edit and delete prducts via the admin page and with having a normal account.
 
 - for the vinyl information to be clear and concise.
 
@@ -36,6 +37,8 @@ All users of this site will be looking for similar things bar the admin which ca
 
 - To be able to search items available
 
+- To be able to view and use the asite on a devices and browsers
+
 
 # Design
 
@@ -46,16 +49,16 @@ For my typograpghy I used a Google font lato  with a fallback of sans serif.
 I used a image from Google of a Music shop for the backround image of the project, I also used the images for different album coverz all from google images by simply typing in the album.
 
 ## Colour Scheme
-I used a colour scheme involving the materilize blue of "#64b5f6 blue lighten-2" along with white and different variations such as "#7bc1fa" and "#0381c0;" for when a anchor is hovered over.
+I used the white background and my shade of purple for nearly all aspects on this site "rgb(100, 100, 230);"
 
 ## Wireframes
 For the design of my wireframes I used Balsamic, You can find the link to the site here! [ https://balsamiq.com/ ]
 
 I will also include screenshots below.
 
-[wireframe one](wireframe1.png)
+![Wireframes](media/wf2.png)
 
-wireframe
+![Wireframes](media/wf3.png)
 
 wireframe
 
@@ -78,26 +81,28 @@ wireframe
 
 - Delete a product with admin.
 
-Register a Accout
+- Register a Account
 
-view Profile
+- View Profile
 
-Flash messages to let user know if it has gone through or/and been created.
+- Flash messages to let user know if it has gone through or/and been created.
 
-site fully responsive on all viewporths and devices.
+- Site fully responsive on all viewporths and devices.
 
-Search bar to search for book reviews or reset page if book review is not found.
+- Search bar to search for vinyls/productss or reset page if Vinyl not found.
 
-Contact section to allow users to get in touch and email available.
+- Stripe security features including input of card payments.
 
-all links take the user to a new page and links are related the book review websites above the footer.
+- Edit/delete product information 
+
+- Sign up qhich requires confirmation of email
 
 # Future features
-I would also like to include a questionare about peoples favourite albums and sites.
+- I would also like to include a questionare about peoples favourite albums and sites.
 
-Possibly add a game in the future to add even more interactivity.
+- Possibly add a game in the future to add even more interactivity.
 
-Allow the admin to delete book reviews or modiy them more so.
+- Allow the admin to delete book reviews or modiy them more so.
 
 # Technologies used
 
@@ -140,6 +145,9 @@ Allow the admin to delete book reviews or modiy them more so.
 #### 
 - For my data base I sketched a quick diagram 
 
+	![alt text](/media/dbdiagram.jpg)
+
+  - For future I would have a much more laid out Diagram to represent my DB however close to submission I lost my original DB drawing.
 
  # Testing
 
@@ -165,7 +173,7 @@ Allow the admin to delete book reviews or modiy them more so.
 
 - Correct the changes if needed.
 
- ## I viewed the site on different browsers to see how it reacted.
+ - I viewed the site on different browsers to see how it reacted.
 
 - I would open up a different browser be it be it mozilla,internet explorer or google.
 
@@ -200,9 +208,22 @@ There is a clear Log Out header which appears in the navbar for users who are lo
 - To store date securely
 The admin and user are both able to store their data which is sent to a heorku datebase, the passwords are salted to add more security and stop brute forcing.
 
+- To purchase items successfully 
+All items have a successful toast whenever a porduct is either added, edited or deleted from a shopping bag.
 
+- All payments are validate after a user hits submit.
 
-I had to change a max width for containers to organise the styling of the code a lot more.
+. The card inputs have to be validated card details thanks to stripes features
+
+- To store date securely
+ all data is stored carefully within AWS Stripe, Google and Django.
+
+- To be able to search items available
+ The main page has a seach bar which all users can use to search for products.
+
+- To be able to view and use the site on different devices and browsers
+
+This site is responsive on all platforms,devices and web browsers.
 
 
  # Deployment
@@ -330,7 +351,9 @@ If you wish to contribute to this website you can Fork it without affecting the 
 
  ## Known Bugs and Problems
  - The biggest and most troublesome challenge I had with this project happened after I had to re-open my workspace due to inactivity. This then allowed the update that Gitpod had on the 7th of December. This caused our requirements.txt file to be courrupted and made the CI template no longer useable. I had to re-install all of django and its dependancies and then I had to recreate a new admin and add all my products again along with making migrations. This was by far the problem that set me back the most as I had to redo this multiple times, if my workspace closed at all it had to be re-done. My workspace had dissapeard from Gitpod a week ago and I had to go through these steps again.
- -
+
+ - I also had to add fav icon erorr..
+
  -
  -
  -
