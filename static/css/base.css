@@ -2,7 +2,6 @@ html {
     height: 100%;
 }
 #logo-index {
-    font-weight: 1800;
     color: #fff;
     text-shadow: 2px 2px 4px #000000;
     font-size: 22px;
@@ -18,7 +17,6 @@ html {
 
 #all-products-link:hover{
     color:  rgb(100, 100, 230);
-    font-weight: 1200;
 }
 #all-products-link{
    font-size: 25px;
@@ -37,12 +35,6 @@ html {
 
 .toast-capper {
     height: 2px;
-}
-
-
-
-.logo-font{
-    font-weight: 1400;
 }
 
 #header{

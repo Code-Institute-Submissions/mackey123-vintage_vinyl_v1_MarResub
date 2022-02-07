@@ -1,9 +1,13 @@
 
 # Welcome
 
-This is the Readme for Vintage Vinyl website! I hope to provide all the necessary information and and answer any questions you may have. I decided to take the approach of making the website first on normal broswer format as in a laptop or computer, then styled and added what was needed for tablet and mobile devices. It is responsive on all devices, view the website here : 
+This is the Readme for Vintage Vinyl website! I hope to provide all the necessary information and and answer any questions you may have. I decided to take the approach of making the website first on normal broswer format as in a laptop or computer, then styled and added what was needed for tablet and mobile devices. It is responsive on all devices, view the website here : https://vintage-vinyl-app.herokuapp.com/
 
 This site was built using [GitHub Pages](https://pages.github.com/)
+
+
+![MockUp Live Site](media/mockup.png)
+
 
 # User Experience (UX)
 
@@ -56,11 +60,13 @@ For the design of my wireframes I used Balsamic, You can find the link to the si
 
 I will also include screenshots below.
 
+![Wireframes](media/wireframe1.png)
+
 ![Wireframes](media/wf2.png)
 
 ![Wireframes](media/wf3.png)
 
-wireframe
+
 
 # Features
 - Search bar for people to search products.
@@ -359,6 +365,8 @@ If you wish to contribute to this website you can Fork it without affecting the 
  - media not been apllied bug 
  -
  -
+
+ ## Points to Consider??
 
 ## Credit
 First I would like to thank my mentor Samantha for all the help and then the Code Institute! I would also like to thank all the tutors you have all been amazing and lastly but not least anyone on Slack who reached out and helped with my many problems.
