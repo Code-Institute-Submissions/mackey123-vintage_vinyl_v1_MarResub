@@ -362,11 +362,13 @@ If you wish to contribute to this website you can Fork it without affecting the 
 
  - I experienced my CSS not been applied to my live site when I deployed from herokyu the sewcond time, to fix this I had to first chekc my AWS Bucket and make sure everything was up to date which it was. I then had to check my heroku logs which informed me that it was my database.url not havebeen exported. This then allowed my CSS to be appplid Once it was successfully exported. 
 
- - media not been apllied bug 
+ - I cannot get the media to be uploaded to my deployed heroku site even after creating a file on the Amazone bucket, I have had the deploying steps done at the start yet these problems were not visble until yesterday when I went to redeploy.
  -
  -
 
- ## Points to Consider??
+ ## Points to Consider
+
+ - I have been working on this project fopr what feels like forever and have enjoyed not one second of it, the update from Gitpod set me back so much that even now when I am writing this on the day of submission I think I will still not get the project working fully due to having to constantly to re-install and redo much of the project.
 
 ## Credit
 First I would like to thank my mentor Samantha for all the help and then the Code Institute! I would also like to thank all the tutors you have all been amazing and lastly but not least anyone on Slack who reached out and helped with my many problems.
