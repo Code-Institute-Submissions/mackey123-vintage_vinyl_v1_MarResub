@@ -368,10 +368,6 @@ If you wish to contribute to this website you can Fork it without affecting the 
 
  -
 
- ## Points to Consider
-
- - I have been working on this project foor what feels like forever and have enjoyed not one second of it, the update from Gitpod set me back so much that even now when I am writing this on the day of submission I think I will still not get the project working fully due to having to constantly to re-install and redo much of the project.
-
 ## Credit
 First I would like to thank my mentor Samantha for all the help and then the Code Institute! I would also like to thank all the tutors you have all been amazing and lastly but not least anyone on Slack who reached out and helped with my many problems.
 
