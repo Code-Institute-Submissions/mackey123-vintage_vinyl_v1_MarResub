@@ -309,3 +309,12 @@ form {
         padding: .25rem .5rem !important;
     }
 }
+
+#profile-main :hover{
+    color: #000000;
+}
+
+
+.my-0{
+    color: #000;
+}
