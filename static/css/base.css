@@ -318,3 +318,29 @@ form {
 .my-0{
     color: #000;
 }
+
+/*--Footer--*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  footer {
+      background-color:#80C4FF;
+      color:#1a1a1a;
+  }
+  
+  .social-media a {
+    font-size: 36px;
+    padding-left: 15px;
+    color: #1a1a1a;
+  }
+  
+  .social-media a:hover {
+      background: #98f2a4;
+      color:#ff80c7;
+  }
