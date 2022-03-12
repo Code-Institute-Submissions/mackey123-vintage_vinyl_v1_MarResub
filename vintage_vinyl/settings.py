@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'bag',
     'profiles',
     'checkout',
-
+    'sendemail.apps.SendemailConfig',
     'crispy_forms',
     'storages',
 ]

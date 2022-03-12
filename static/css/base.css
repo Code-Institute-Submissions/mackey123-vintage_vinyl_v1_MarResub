@@ -319,8 +319,6 @@ form {
     color: #000;
 }
 
-
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -332,14 +330,21 @@ ul {
   footer {
       background-color:rgb(100, 100, 230);
       color:#fff;
+      font-weight: 400;
+      font-size: 24px;
   }
   
-  .social-media a {
+  footer a {
     font-size: 24px;
     padding-left: 15px;
     color: #fff;
+    font-weight: 600;
   }
   
-  /* .social-media a:hover {
-    
-  } */
+  footer a:hover {
+    color: #000000;
+  }
+
+  #text{
+    font-size: 24px;
+  }
