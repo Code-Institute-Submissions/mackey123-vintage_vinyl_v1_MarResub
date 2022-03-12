@@ -1,3 +1,4 @@
+"""Bag contents functionailty."""
 from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
@@ -5,6 +6,21 @@ from products.models import Product
 
 
 def bag_contents(request):
+    """
+        Prints the person's name and age.
+
+        If the argument 'additional' is passed,
+        then it is appended after the main info.
+
+        Parameters
+        ----------
+        request : str, optional
+            More info to be displayed (default is None)
+
+        Returns
+        -------
+        None
+    """
 
     bag_items = []
     total = 0

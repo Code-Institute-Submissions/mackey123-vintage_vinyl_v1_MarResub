@@ -1,5 +1,15 @@
+"""Name module."""
 from django.apps import AppConfig
 
 
 class BagConfig(AppConfig):
-    name = 'bag'
+    """
+    A class to set name of bag.
+
+    ...
+
+    Variables
+    -------
+    string
+    """
+    name = """bag"""
