@@ -1,3 +1,4 @@
+""" url filepaths for checkout app """
 from django.urls import path
 from . import views
 from .webhooks import webhook

@@ -1,3 +1,4 @@
+""" product app url file paths """
 from django.urls import path
 from . import views
 

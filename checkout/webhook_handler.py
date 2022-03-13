@@ -1,3 +1,4 @@
+""" webhook handler for checkout app """
 from django.http import HttpResponse
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
@@ -59,7 +60,6 @@ class StripeWH_Handler:
         for field, value in shipping_details.address.items():
             if value == "":
                 shipping_details.address[field] = None
-
 
         profile = None
         username = intent.metadata.username

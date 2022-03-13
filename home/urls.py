@@ -1,3 +1,4 @@
+""" url route path for home """
 from django.urls import path
 from . import views
 
