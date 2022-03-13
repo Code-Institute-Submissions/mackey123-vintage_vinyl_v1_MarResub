@@ -82,6 +82,7 @@
                                     <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
                                     <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                                 {% endif %}
+                                <a href="{% url 'contact' %}" class="dropdown-item">Contact</a>
                             </div>
                           </div>
                     </li>
@@ -147,6 +148,15 @@
     <footer class="footer mt-auto py-3">
         <div class="container">
             <div class="row">
+
+<!-- <h1>Contact Us</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="form-actions">
+        <button type="submit">Send</button>
+    </div>
+</form> -->
                 
                 <!--Contact us-->
                 <!-- <div class="col-sm-4 mt-2 text-center">
@@ -163,9 +173,9 @@
 	            
 
 
-                	<!--Contact form-->
-	<!-- <div class="col-sm-4 mt-2 text-center">
-	    <h5>Contact us</h5>
+                	<!-- Contact form-->
+	<div class="col-sm-4 mt-2 text-center">
+	    <a href="{% url 'contact' %}"><h5>Contact us</h5></a>
 	    <h6> <i>Have any questions?</i>
         </h6>
 	    <ul>
@@ -174,12 +184,12 @@
 	             One of our staff members will be happy to contact you directly and answer your questions as soon as possible.
             </h6>
         </ul>
-	    <form method="post">
+	    <!-- <form method="post">
 	        {% csrf_token %}
 	            {{form.as_p}}
 	            <button type="submit">Submit</button>
-	    </form>
-	</div> -->
+	    </form> -->
+	</div>
 
 
                 <div class="col-sm-4 mt-2 text-center">
