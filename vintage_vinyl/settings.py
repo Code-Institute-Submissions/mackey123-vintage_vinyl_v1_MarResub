@@ -225,5 +225,5 @@ DEFAULT_FROM_EMAIL = 'seanrobert2010@gmail.com'
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'apikey'
 EMAIL_HOST_PASSWORD = '<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>'
-EMAIL_PORT = 465
+EMAIL_PORT = 587
 EMAIL_USE_TLS = True
