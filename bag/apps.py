@@ -6,6 +6,5 @@ class BagConfig(AppConfig):
     """
     A class to set name of bag.
 
-
     """
     name = """bag"""

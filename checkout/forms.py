@@ -1,9 +1,14 @@
+""" import forms for order total model """
 from django import forms
 from .models import Order
 
 
 class OrderForm(forms.ModelForm):
+    """ import model forms for order total """
+
     class Meta:
+        """ order total address model """
+
         model = Order
         fields = ('full_name', 'email', 'phone_number',
                   'street_address1', 'street_address2',
