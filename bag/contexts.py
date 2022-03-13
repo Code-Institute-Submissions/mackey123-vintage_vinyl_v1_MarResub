@@ -7,15 +7,8 @@ from products.models import Product
 
 def bag_contents(request):
     """
-        Prints the person's name and age.
+        defines the bags contents.
 
-        If the argument 'additional' is passed,
-        then it is appended after the main info.
-
-        Parameters
-        ----------
-        request : str, optional
-            More info to be displayed (default is None)
 
         Returns
         -------

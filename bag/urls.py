@@ -1,3 +1,4 @@
+"""urls for bag edits and adds"""
 from django.urls import path
 from . import views
 
