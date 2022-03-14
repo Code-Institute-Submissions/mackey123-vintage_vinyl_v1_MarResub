@@ -47,9 +47,10 @@ INSTALLED_APPS = [
     'bag',
     'profiles',
     'checkout',
-    'sendemail.apps.SendemailConfig',
+    # 'sendemail.apps.SendemailConfig',
     'crispy_forms',
     'storages',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -220,10 +221,10 @@ else:
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
 
-    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'seanrobert2010@gmail.com'
-    EMAIL_HOST = 'smtp.sendgrid.net'
-    EMAIL_HOST_USER = 'apikey'
-    EMAIL_HOST_PASSWORD = '<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>'
-    EMAIL_PORT = 587
-    EMAIL_USE_TLS = True
+    # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    # DEFAULT_FROM_EMAIL = 'seanrobert2010@gmail.com'
+    # EMAIL_HOST = 'smtp.sendgrid.net'
+    # EMAIL_HOST_USER = 'apikey'
+    # EMAIL_HOST_PASSWORD = '<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>'
+    # EMAIL_PORT = 587
+    # EMAIL_USE_TLS = True
