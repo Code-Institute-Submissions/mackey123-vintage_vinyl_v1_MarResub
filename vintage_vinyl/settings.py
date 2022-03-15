@@ -29,7 +29,6 @@ DEBUG = True
 ALLOWED_HOSTS = ['vintage-vinyl-app.herokuapp.com', 'localhost']
 
 
-
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -188,7 +187,6 @@ if 'USE_AWS' in os.environ:
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
-
     # Static and media files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     STATICFILES_LOCATION = 'static'
@@ -206,7 +204,8 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
-STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET','whsec_tjjcLHjy0hLtquxLuFyGZu51VzKEkQW6')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', 'whsec_tjjcLHjy0hLtquxLuFyGZu51VzKEkQW6')
+
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
@@ -219,12 +218,3 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
-
-
-    # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-    # DEFAULT_FROM_EMAIL = 'seanrobert2010@gmail.com'
-    # EMAIL_HOST = 'smtp.sendgrid.net'
-    # EMAIL_HOST_USER = 'apikey'
-    # EMAIL_HOST_PASSWORD = '<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>'
-    # EMAIL_PORT = 587
-    # EMAIL_USE_TLS = True

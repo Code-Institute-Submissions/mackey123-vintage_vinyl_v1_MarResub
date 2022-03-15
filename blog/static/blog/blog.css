@@ -51,4 +51,40 @@
     max-height: 300px;
 }
 
+     .my-4{
+    font-size: 25;
+}
+
+
+/* .hero-body{
+    font-display: none;
+    display: none;
+    text-decoration: none;
+    padding: 0%;
+} */
+
+.card-content{
+    padding: 0%;
+}
+
+h1{
+    color: #fff;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.requiredField{
+    color: #fff;
+    font-weight: 200;
+}
+
+.new-blog{
+     height: fit-content;
+}
+
+
+textinput textInput form-control{
+    color: white
+}
+
 

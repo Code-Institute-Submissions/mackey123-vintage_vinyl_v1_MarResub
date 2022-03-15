@@ -208,6 +208,16 @@
             </div>
         </div>
     </footer>
+    <script> 
+        window.addEventListener("resize", handleChange);
+        
+        function handleChange() {
+            let headerSpacerHeight = document.getElementsByTagName("header")[0].offsetHeight;
+            document.getElementById("header-spacer").style.height = (headerSpacerHeight + "px");
+        }
+        
+        $(document).ready(handleChange)
+    </script>
 
     {% block postloadjs %}
     <script type="text/javascript">

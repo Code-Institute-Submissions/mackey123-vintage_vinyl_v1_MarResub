@@ -2,8 +2,8 @@
 {% load static %}
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'blog/blog.css' %}">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 {% endblock %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 
 {% block extra_js %}
 <!-- uni-form jquery  -->
@@ -13,15 +13,22 @@
 {% block extra_title %} {% endblock %}
 
 {% block content %}
-<div class="hero-body">
+
+<div class="container-fluid header-container" id="header-spacer">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+<div>
     <div class="container">
         <div class="columns is-justify-content-center has-text-centered">
             <div class="column is-10">
                 <h3 class="title-heading my-4">Welcome to the blog!</h3>
-                <a class="button is-danger my-4" href="{% url 'add_post' %}">New Post<i
+                <a class="my-4" href="{% url 'add_post' %}">New Post<i
                         class="fas fa-plus-circle m-2"></i></a>
             </div>
         </div>
+        
         <div class="columns is-justify-content-center is-multiline">
             {% if posts %}
             {% for post in posts %}
@@ -34,6 +41,7 @@
                             </a>
                         </div>
                     </div>
+
                     {% if post.image %}
                     <a href="{% url 'post_detail' post.slug %}">
                         <div class="card-image">
@@ -48,6 +56,7 @@
                             <img src="{{ MEDIA_URL }}noimage.png" alt="image for {{ post.title }}">
                         </figure>
                     </div>
+
                     {% endif %}
                     <div class="card-content">
                         <p class=""> {{ post.content |capfirst }}</p>
@@ -73,9 +82,23 @@
             </div>
             {% endfor %}
             {% else %}
-            <h4 class="title-heading-small">No posts yet! why not add one?</h4>
+            <h4 class="title-heading-small">No blog posts yet! why not add one?</h4>
             {% endif %}
         </div>
     </div>
 </div>
+
+
+<script> 
+    window.addEventListener("resize", handleChange);
+    
+    function handleChange() {
+        let headerSpacerHeight = document.getElementsByTagName("header")[0].offsetHeight;
+        document.getElementById("header-spacer").style.height = (headerSpacerHeight + "px");
+    }
+    
+    
+    $(document).ready(handleChange)
+    
+    </script>
 {% endblock %}>
