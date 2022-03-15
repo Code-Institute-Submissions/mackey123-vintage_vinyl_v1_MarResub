@@ -1,3 +1,4 @@
+""" url file paths blog """
 from django.urls import path
 from . import views
 

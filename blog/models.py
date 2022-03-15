@@ -14,6 +14,7 @@ def upload_location(instance, filename):
 
 
 class Post(models.Model):
+    """ model forms model """
     title = models.CharField(max_length=20, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     updated_on = models.DateTimeField(auto_now_add=True)

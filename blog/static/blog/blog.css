@@ -1,11 +1,11 @@
-blog cards 
+
 .card.comments {
     border-top: 3px solid hsl(288, 62%, 35%);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 
 .card.blog-card {
-    border-top: 3px solid hsl(212, 86%, 64%);
+    border-top: 3px solid hsl(290, 86%, 64%);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 
@@ -16,7 +16,6 @@ blog cards
 .blog-small {
     font-style: italic;
     font-weight: 500;
-    color: #5f34b5;
 }
 
 .blog-p {
@@ -42,3 +41,14 @@ blog cards
     max-width: 100%;
     max-height: 100%;
 }
+
+
+.form-group{
+    height: 150px
+}
+
+.textinput{
+    max-height: 300px;
+}
+
+

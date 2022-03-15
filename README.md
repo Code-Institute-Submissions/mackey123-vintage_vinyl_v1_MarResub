@@ -103,6 +103,15 @@ I will also include screenshots below.
 
 - Sign up qhich requires confirmation of email
 
+
+- Guest users can: View blog posts
+
+ - Logged in users can: Add comments on blog posts
+
+- Create new blog posts
+- Edit their own blog posts
+- Delete their own blog posts
+
 # Future features
 - I would also like to include a questionare about peoples favourite albums and sites.
 
@@ -290,6 +299,16 @@ To deploy my Project to Github do it following these steps
 - You can now click on “Open App” which will launch the deployed app.
 
 
+
+## Automatic Deploy on Heroku
+You can enable automatic deploy in the following steps that pushes update to Heroku everytime you push to github.
+
+Go to Deploy in Heroku dashboard.
+At Automatic deploys, choose a github repository you want to deploy.
+Click Enable Automatic Deploys.
+
+
+
 ## AWS
 
 - Created a new Amazon account and connect to amazon service AWS3 account are cloud based serve where the project media and staicfiles will be stored unto. At first, we locate S3 on amazon service then we create a bucket. While creating the bucket on S3, the note that public access must be all switched off to allow access for users.
@@ -336,6 +355,15 @@ If you wish to clone or download this repository to your local device you can fo
 
 - Type Git Clone and paste the URL you copied from the GitHub.
 To create your local clone press Enter
+
+## Database
+- SQLite
+Cloud based database to hold the product, user, order and blog fields.
+
+- Postgres
+
+## Database Design
+The database uses SQL through PostgreSQL and was originally formed from fixtures categories.json and products.json
 
 
 ## Forking

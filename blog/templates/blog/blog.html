@@ -2,6 +2,7 @@
 {% load static %}
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'blog/blog.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 {% endblock %}
 
 {% block extra_js %}
@@ -9,7 +10,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Uniform.js/4.3.0/js/jquery.uniform.bundled.js"></script>
 {% endblock %}
 
-{% block extra_title %} - Blog {% endblock %}
+{% block extra_title %} {% endblock %}
 
 {% block content %}
 <div class="hero-body">
