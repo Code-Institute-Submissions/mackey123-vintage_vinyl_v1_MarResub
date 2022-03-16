@@ -56,16 +56,8 @@ body{
 }
 
      .my-4{
-    font-size: 25;
+    font-size: 25px;
 }
-
-
-/* .hero-body{
-    font-display: none;
-    display: none;
-    text-decoration: none;
-    padding: 0%;
-} */
 
 .card-content{
     padding: 0%;
@@ -91,8 +83,10 @@ textinput textInput form-control{
     color: white
 }
 
-
-footer{
-    background-color: none;
+.title-heading-small blog-title{
+    padding: 5px;
 }
 
+.card-reader{
+    padding: 5px;
+}
