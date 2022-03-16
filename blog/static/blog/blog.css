@@ -90,3 +90,7 @@ textinput textInput form-control{
 .card-reader{
     padding: 5px;
 }
+
+.new-blog{
+    color: black;
+}
