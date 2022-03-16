@@ -69,48 +69,70 @@ I will also include screenshots below.
 
 
 # Features
-- Search bar for people to search products.
 
-- Responsive on all devices 
+ ## Bag
+- Users are able to:
 
-- Forms and contact section to allow users to give feedback.
+- Find out how much more they need to spend to get free delivery ($50)
+- Clearly see the total of their items by quantity and grand total
+- Adjust number of products in bag if they require
+- Find out delivery costs
 
-- The site is responsive and can be viewed on all viewports.
+## Create Profile
+- Users are able to:
+- Create a profile to save their orders and personal information
+- Log in to profile to see their orders and personal information
+- Edit personal information if required
+- Confirm their details are correct via email verification
+- Store details for faster checkout
+- Log in to Profile
 
-- Store users data and allow them to create a account.
-
-- Can add a book Review
-
-- Add a Vinyl product.
-
-- Edit a vinyl product through admin.
-
-- Delete a product with admin.
-
-- Register a Account
-
-- View Profile
-
-- Flash messages to let user know if it has gone through or/and been created.
-
-- Site fully responsive on all viewporths and devices.
-
-- Search bar to search for vinyls/productss or reset page if Vinyl not found.
-
-- Stripe security features including input of card payments.
-
-- Edit/delete product information 
-
-- Sign up qhich requires confirmation of email
+- Users are able to:
 
 
-- Guest users can: View blog posts
+## Blog
+- Guest users can:
 
- - Logged in users can: Add comments on blog posts
+- View blog posts
+- Logged in users can:
 
-- Create new blog posts
 - Edit their own blog posts
 - Delete their own blog posts
+- Add comments on blog posts
+- Create new blog posts
+
+
+## Product Details Page
+- Users are able to:
+
+- Add products to bag to buy
+
+- Super users are able to:
+
+- Add, edit and delete products
+
+## Products Management
+- If the user is a super user they can:
+
+- Add a product 
+- add a image for product
+- Edit a product
+- Delete a Product
+
+
+## Checkout
+Users can:
+- Save time as personal details pulled from profile page if user is logged in
+- Save their delivery information to their profile
+- Clearly see how much they will be charged for their items and delivery
+
+## Products Page
+- Users are able to:
+
+- sort products by A-Z, Name, Category, Price.
+- Price of product
+- See the products for sale on the site
+
 
 # Future features
 - I would also like to include a questionare about peoples favourite albums and sites.
@@ -210,6 +232,7 @@ Automated testing of views was completed to:
 - Test the products page is accessible by name
 - Test that the view_bag view works correctly
 - Test that the add to bag view works as expected
+
 - Test that the add_to_bag view adds the product to the bag
 - Test that the adjust bag view works as expected to calculate total
 - Test that the add_to_bag view updates the quantity of an item if the item is already in the bag
@@ -225,11 +248,12 @@ Automated testing of views was completed to:
 - Test the url works when loading the page
 - Check if user is authenticated then autofill the form with details
 - Test error msg appears when bag empty
+
 - Test error msg appears when no stripe key
 - Test the correct template loads on page load
 - test the products page is accessible by name
 - Test get checkout view when items in the bag
- Test that the cache_checkout_data view works as expected
+ - Test that the cache_checkout_data view works as expected
 
 ### Automated testing of models was completed to:
 
@@ -237,22 +261,24 @@ Automated testing of views was completed to:
 - test order line model string method
 - Automated testing of forms was completed to:
 
-- test to see if town_or_cty field is required
-- test to see if street_address1 field is required
-- test to see if full name field is required
-- test to see if email field is required
 - test to see if phone number field is required
 - test to see if country field is required
 - check the field only displays certain fields
 - back to contents
+- test to see if town_or_cty field is required
+- test to see if street_address1 field is required
+- test to see if full name field is required
+- test to see if email field is required
+
 
 ### Profiles
  Automated testing of views was completed to:
 
+
+- Test the correct template loads on page load
 - Test the profile page is accessible by name
 - Test the profile form works if form is valid
 - Test the url works when loading the page
-- Test the correct template loads on page load
 - Test orders displayed on login to profile page
 Automated testing of models was completed to:
 
@@ -278,12 +304,13 @@ Automated testing of views was completed to:
 Automated testing of models was completed to:
 
 - Test category model string method
-- Testing category models friendly name string method returns friendly name
-- Test product model string method
 - Test that the product name is returned
 - Test that the product description is returned
 - Test whether a product has sizes or not
 - Test whether a product has weights or not
+- Testing category models friendly name string method returns friendly name
+- Test product model string method
+
 Automated testing of forms was completed to:
 
 - Test to see if review title field is required
@@ -437,8 +464,6 @@ Click Enable Automatic Deploys.
 - The Django Storages is passed into the installed apps in settings and also a custom_storage file is created to store credentials in environment variable. And once everything looks fine we can run python3 manage.py collectstatic. This will collect all the static files in our app including any changes that is made. N.B this command has to be run in the development(local) environment each time a change is been made in the static files/folder and your folder and files should display in your AWS S3 BUCKETS
 
 
-
-
 ## Run code locally
 - To run my code locally follow these steps: Log in to GitHub and locate the GitHub Repository
 
@@ -508,7 +533,9 @@ If you wish to contribute to this website you can Fork it without affecting the 
  - I cannot get the media to be uploaded to my deployed heroku site even after creating a file on the Amazon bucket, I have had the deploying steps done at the start yet these problems were not visble until yesterday when I went to redeploy. I have not solved the issue regarding the images yet and while solving these I seemed to have lost the use of my account button on the main page, it only seems to work when you change the viewport now this was not here earlier, my CSS has started to not be applied to my gitpod site hwoever is working on my deployed site? I have had a tab open with the tutors the last 12 hours and Did not fully solve the bug, eventually got my CSS appplied to my heorku app after geting it to finally deploy, but then as a result I have no images still on my deployed site and I lost the use of my Account button on the home page. These issue are all popping up right before my submission time and I think I will not be able to solve them in that time as most our new.
 
 
- - Upon deployment tp Heroku I noticed after 
+ - Upon deployment to Heroku I noticed that images wuld not load on my gitpod site and this was due to AWS adding letters to image file names, the name files had to be changed back in order for them to load.
+
+ - AWS S3 bucket also has to be on public to allo users to upload css files
 
 
 
@@ -520,6 +547,11 @@ First I would like to thank my mentor Samantha for all the help and then the Cod
 - I would aslo like to credit ckz8780 Chris and the Code Institute as the whole project is based of the Botique Ado project.
 
 ### Credit (links)
+
+Used for blog styles
+Bulma
+https://bulma.io/documentation/overview/resp
+
 
 adapted and project inspired from mini project "putting it all together"
 W3C SCHOOLS
