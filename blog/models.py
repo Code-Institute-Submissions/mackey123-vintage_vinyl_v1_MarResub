@@ -1,3 +1,4 @@
+""" models import """
 from django.db import models
 from django.db.models.signals import pre_save
 from django.utils.text import slugify
@@ -7,6 +8,7 @@ from django.contrib.auth.models import User
 
 
 def upload_location(instance, filename):
+    """ def upload author """
     file_path = 'blog/{author_id}/{title}-{filename}'.format(
         author_id=str(instance.author.id),
         title=str(instance.title), filename=filename)
@@ -25,6 +27,7 @@ class Post(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
 
     class Meta:
+        """ ordering class """
         ordering = ['-created_on']
 
     def __str__(self):
@@ -33,10 +36,12 @@ class Post(models.Model):
 
 @receiver(post_delete, sender=Post)
 def submission_delete(sender, instance, **kwargs):
+    """ define delete submission """
     instance.image.delete(False)
 
 
 def pre_save_blog_post_receiver(sender, instance, *args, **kwargs):
+    """ save blog post """
     if not instance.slug:
         instance.slug = slugify(
             instance.author.username + "-" + instance.title)
@@ -46,6 +51,7 @@ pre_save.connect(pre_save_blog_post_receiver, sender=Post)
 
 
 class Comment(models.Model):
+    """ models post and comment class """
     post = models.ForeignKey(
         Post, related_name='comments', on_delete=models.CASCADE)
     comment_author = models.ForeignKey(
