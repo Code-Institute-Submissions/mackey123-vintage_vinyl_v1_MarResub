@@ -144,8 +144,15 @@
     {% block page_header %}
     {% endblock %}
 
+    <div class="content">
+    <div class="container-fluid header-container" id="header-spacer">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
     {% block content %}
     {% endblock %}
+    </div>
 
     <footer class="footer mt-auto py-3">
         <div class="container">
@@ -178,7 +185,8 @@
 
                     </ul>
                 </div>
-                
+
+            
 
                 <div class="col-sm-4 mt-2 text-center">
                     <h5>Social Media</h5>
@@ -202,13 +210,15 @@
             </div>
         </div>
 
-        
+           
         <div class="footer-copyright text-center">
             <div class="container">
                 © 2022 Vintage Vinyl
                 <a class="right" href="https://therecordhub.com/?gclid=CjwKCAjwlcaRBhBYEiwAK341jUEpyYrXjyYVSJgDfvkUxfRwlG_fF1faGixfarcpi8OgpE7qS979GBoC1cYQAvD_BwE" target="_blank">Our favoruite site the Record Hub</a>
             </div>
         </div>
+
+        
     </footer>
 
 
@@ -220,6 +230,21 @@
           $('.toast').toast('show');
      });
     </script>
+
+
+
+<script>
+    window.addEventListener("resize", handleChange);
+
+function handleChange() {
+    let headerSpacerHeight = document.getElementsByTagName("header")[0].offsetHeight;
+    document.getElementById("header-spacer").style.height = (headerSpacerHeight + "px");
+}
+
+
+$(document).ready(handleChange)
+</script>
+
     {% endblock %}
   
     

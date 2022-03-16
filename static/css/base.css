@@ -376,3 +376,8 @@ ul {
   label{
       color: #ccc;
   }
+
+
+  .form_container textarea {
+    height: 150px;
+  }
