@@ -2,12 +2,13 @@
 {% load static %}
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'blog/blog.css' %}">
+
 {% endblock %}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 
+
 {% block extra_js %}
-<!-- uni-form jquery  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Uniform.js/4.3.0/js/jquery.uniform.bundled.js"></script>
+
 {% endblock %}
 
 {% block extra_title %} {% endblock %}
@@ -89,16 +90,6 @@
 </div>
 
 
-<script> 
-    window.addEventListener("resize", handleChange);
-    
-    function handleChange() {
-        let headerSpacerHeight = document.getElementsByTagName("header")[0].offsetHeight;
-        document.getElementById("header-spacer").style.height = (headerSpacerHeight + "px");
-    }
-    
-    
-    $(document).ready(handleChange)
-    
-    </script>
+
+   
 {% endblock %}>
