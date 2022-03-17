@@ -1,7 +1,7 @@
 
 # Welcome
 
-This is the Readme for Vintage Vinyl website! I hope to provide all the necessary information and and answer any questions you may have. I decided to take the approach of making the website first on normal broswer format as in a laptop or computer, then styled and added what was needed for tablet and mobile devices. It is responsive on all devices, view the website here : https://vintage-vinyl-app.herokuapp.com/
+This is the Readme for Vintage Vinyl website! I hope to provide all the necessary information and answer any questions you may have. I decided to take the approach of making the website first on normal browser format as in a laptop or computer, then styled and added what was needed for tablet and mobile devices. It is responsive on all devices, view the website here: https://vintage-vinyl-app.herokuapp.com/
 
 This site was built using [GitHub Pages](https://pages.github.com/)
 
@@ -17,17 +17,17 @@ This site was built using [GitHub Pages](https://pages.github.com/)
 
 All users of this site will be looking for similar things bar the admin which can be seen after  the normal users are as follows :
 
-- Navigate easy through all devices and have all areas of website responsive.
+- Navigate easily through all devices and have all areas of the website responsive.
 
  - To be able to view/preview the site before creating an account.
 
- - Have clear Registration and Log In pages.
+ - Have clear Registration and Login pages.
 
- - To be able to view through the vinyl genres avaialble.
+ - To be able to view through the vinyl genres available.
 
-  - Have the ability to add their own products and keep a record of them through the superuser.
+  - Have the ability to add their products and keep a record of them through the superuser.
 
-- To be able to edit and delete prducts via the admin page and with having a normal account.
+- To be able to edit and delete products via the admin page and with having a normal account.
 
 - for the vinyl information to be clear and concise.
 
@@ -37,26 +37,26 @@ All users of this site will be looking for similar things bar the admin which ca
 
 - To be able to pay with a Credit or Debit card securely.
 
-- To store date securely
+- To store data securely
 
 - To be able to search items available
 
-- To be able to view and use the asite on a devices and browsers
+- To be able to view and use the site on devices and browsers
 
 
 # Design
 
 ## Typograpghy
-For my typograpghy I used a Google font lato  with a fallback of sans serif.
+For my typography I used a Google font lato with a fallback of sans serif.
 
 ## Imagery
-I used a image from Google of a Music shop for the backround image of the project, I also used the images for different album coverz all from google images by simply typing in the album.
+I used an image from Google of a Music shop for the background image of the project, I also used the images for different album covers all from google images by simply typing in the album.
 
 ## Colour Scheme
-I used the white background and my shade of purple for nearly all aspects on this site "rgb(100, 100, 230);"
+I used the white background and my shade of purple for nearly all aspects on this site "RGB(100, 100, 230);"
 
 ## Wireframes
-For the design of my wireframes I used Balsamic, You can find the link to the site here! [ https://balsamiq.com/ ]
+For the design of my wireframes, I used Balsamic, You can find the link to the site here! [ https://balsamiq.com/ ]
 
 I will also include screenshots below.
 
@@ -71,12 +71,11 @@ I will also include screenshots below.
 # Features
 
  ## Bag
-- Users are able to:
+- Users can:
 
 - Find out how much more they need to spend to get free delivery ($50)
-- Clearly see the total of their items by quantity and grand total
-- Adjust number of products in bag if they require
-- Find out delivery costs
+- See the total of their items by quantity and total
+- Adjust the number of products in bag if they require
 
 ## Create Profile
 - Users are able to:
@@ -85,9 +84,7 @@ I will also include screenshots below.
 - Edit personal information if required
 - Confirm their details are correct via email verification
 - Store details for faster checkout
-- Log in to Profile
-
-- Users are able to:
+- Log in to their Profile
 
 
 ## Blog
@@ -115,7 +112,7 @@ I will also include screenshots below.
 - If the user is a super user they can:
 
 - Add a product 
-- add a image for product
+- add a image for a product
 - Edit a product
 - Delete a Product
 
@@ -139,8 +136,6 @@ Users can:
 
 - Possibly add a game in the future to add even more interactivity.
 
-- Allow the admin to delete book reviews or modiy them more so.
-
 # Technologies used
 
 ## languages used
@@ -155,7 +150,6 @@ Users can:
  ### CSS
  - Used to style all elemets of the site and for media queries.
  
-
  ### HTML
  - Used for main structure/text of site
 
@@ -166,8 +160,7 @@ Users can:
  - used for all .py files and most of backend development.
 
 ### DJANGO
-- Framework which admina and whole site is based off.
-
+- Framework which templates html and is a Framework, whole site is based off Django.
 
 ## Database
 
@@ -180,11 +173,11 @@ Users can:
 ### Database diagram 
 
 #### 
-- For my data base I sketched a quick diagram 
+- For my database I sketched a quick diagram 
 
 	![alt text](/media/dbdiagram.jpg)
 
-  - For future I would have a much more laid out Diagram to represent my DB however close to submission I lost my original DB drawing.
+  - For future I would have a much more laid out Diagram
 
  # Testing
 
@@ -194,11 +187,11 @@ Users can:
 
 - Paste the code into the correct tester.
 
-- Once results and errors (if present) are visble, examine and correct the changes needed.
+- Once results and errors (if present) are visible, examine and correct the changes needed.
 
-- Repeated the same process for all the languages.
+- Repeated the same process for all languages.
 
-## I browsed through the site on all the different types of view port to ensure it worked well.
+## I browsed through the site on all the different types of view ports to ensure it worked well.
 
 - I would browse through all of the site on the mobile and tablet viewports.
 
@@ -212,11 +205,11 @@ Users can:
 
  - I viewed the site on different browsers to see how it reacted.
 
-- I would open up a different browser be it be it mozilla,internet explorer or google.
+- I would open up a different browser, be it be it mozilla, internet explorer or google.
 
 - I would interact and click all the links available to make sure they worked.
 
-- Interact with all interactive elements and code to make sure it ran they way its supposed to.
+- Interact with all interactive elements and code to make sure it ran the way it is supposed to.
 
 ## Security Testing
 All pages were tested to make sure that no unauthorised users can access pages they should not have access to. If a user is logged out, they have no access to any pages they should not have access to. All admin only pages can only be accessed by the admin. Redirects are all working as expected, with correct flash messages present.
@@ -239,20 +232,20 @@ Automated testing of views was completed to:
 - Test remove from bag view removes the product from the bag
 - Test that the remove_from_bag view removes an item from the bag
 - Test that the add_to_bag view increases the quantity of an item if the item is already present in the shopping bag
-- est that the remove from bag view returns an error if something goes wrong
+- Test that the remove from bag view returns an error if something goes wrong
 
 ### Checkout
 Automated testing of views was completed to:
 
 - Test the checkout page loads correctly
 - Test the url works when loading the page
-- Check if user is authenticated then autofill the form with details
-- Test error msg appears when bag empty
+- Check if user is authenticated then autofill the form with details if the are
+- Test error message appears when bag empty
 
-- Test error msg appears when no stripe key
+- Test error message appears when no stripe key
 - Test the correct template loads on page load
-- test the products page is accessible by name
-- Test get checkout view when items in the bag
+- Test the products page is accessible by name
+- Test the checkout view when items are in the bag
  - Test that the cache_checkout_data view works as expected
 
 ### Automated testing of models was completed to:
@@ -296,7 +289,7 @@ Automated testing of views was completed to:
 - Test products display
 - Test categories sort functionality
 - Test that the sort functionality works
-- est that the search functionality works as expected
+- Test that the search functionality works as expected
 - Test that the search error message display correctly
 - Test product detail page loads via url
 - Test product detail page loads via name
@@ -306,17 +299,9 @@ Automated testing of models was completed to:
 - Test category model string method
 - Test that the product name is returned
 - Test that the product description is returned
-- Test whether a product has sizes or not
-- Test whether a product has weights or not
 - Testing category models friendly name string method returns friendly name
 - Test product model string method
 
-Automated testing of forms was completed to:
-
-- Test to see if review title field is required
-- Test to see if review field is required
-- Check the field only displays certain fields
-- Test to see if review title field is required
 
  ### Blog
 Automated testing of views was completed to:
@@ -340,6 +325,81 @@ Automated testing of views was completed to:
 - Test the home page is accessible by name
 - Test the url works when loading the page
 - Test the correct template loads on page load
+
+## Validation 
+All code was validated by online formatters such as:
+
+### J Shint
+- All code was entered into J Shint and the compared after to toiginal code
+
+- A few errors occured which were solved by placing /*jshint esversion: 6 */ at the top of every file.
+
+- Few erros came up due to django and html mixed with code.
+
+- Validated like this 
+
+![JavaScript validator image](media/jsvalidate.png)
+
+### Grammerly
+
+- Readme writing was corrected by having grammerly on while doing so.
+
+
+
+![Grammerly word validator](media/gram.png)
+
+### Jigsaw CSS 
+
+- All code was entered into the CSS validator. 
+
+- All code came back as this 
+
+![CSS validator image](media/cssvalid.png)
+
+### W3C HTML Validator
+- All Html pages were entered into the validator
+
+- Most errors found are due to django but no actual html erros found in code.
+
+- Validated like this 
+
+![Html Validator image](media/htmlvalidate.png)
+
+- Code was entered by Direct input and then the check button was clicked
+
+- Code was compared and then the changes made
+
+### PEP 8 for python
+- All code has no errors bar linter warnings, these can be tunred off in settings.json however I felt it was important to keep when validating.
+
+- With advice from CI communitty only warnings left are pylint which do not effect actual code.
+
+- Code was validated in PEP8 like this 
+
+![Python validator image](media/pythonvalid.png)
+
+- Code was pasted in and then the button was clicked check
+
+- The changes were then made by comparing
+
+
+## How to create super user
+
+More here [ https://docs.djangoproject.com/en/1.8/intro/tutorial02/]
+
+### Creating an admin user¶
+- First we’ll need to create a user who can login to the admin site. Run the following command:
+
+-  $ python manage.py createsuperuser
+- Enter your desired username and press enter.
+- Username: admin
+- You will then be prompted for your desired email address:
+- Email address: admin@example.com
+- The final step is to enter your password.
+- You will be asked to enter your password twice, the second time as a confirmation of the first.
+- Password: **********
+- Password (again): *********
+- Superuser created successfully.
 
 ## Testing user stories
 
@@ -368,9 +428,9 @@ The admin and user are both able to store their data which is sent to a heorku d
 - To purchase items successfully 
 All items have a successful toast whenever a porduct is either added, edited or deleted from a shopping bag.
 
-- All payments are validate after a user hits submit.
+- All payments are validated after a user hits submit.
 
-. The card inputs have to be validated card details thanks to stripes features
+- The card inputs have to be validated card details thanks to stripes features
 
 - To store date securely
  all data is stored carefully within AWS Stripe, Google and Django.
@@ -380,7 +440,7 @@ All items have a successful toast whenever a porduct is either added, edited or 
 
 - To be able to view and use the site on different devices and browsers
 
-This site is responsive on all platforms,devices and web browsers.
+- This site is responsive on all platforms,devices and web browsers.
 
 
  # Deployment
@@ -532,14 +592,11 @@ If you wish to contribute to this website you can Fork it without affecting the 
 
  - I cannot get the media to be uploaded to my deployed heroku site even after creating a file on the Amazon bucket, I have had the deploying steps done at the start yet these problems were not visble until yesterday when I went to redeploy. I have not solved the issue regarding the images yet and while solving these I seemed to have lost the use of my account button on the main page, it only seems to work when you change the viewport now this was not here earlier, my CSS has started to not be applied to my gitpod site hwoever is working on my deployed site? I have had a tab open with the tutors the last 12 hours and Did not fully solve the bug, eventually got my CSS appplied to my heorku app after geting it to finally deploy, but then as a result I have no images still on my deployed site and I lost the use of my Account button on the home page. These issue are all popping up right before my submission time and I think I will not be able to solve them in that time as most our new.
 
+ - Favicon error can appear in dev tools but disappears shortly after loading or refresshed.
 
  - Upon deployment to Heroku I noticed that images wuld not load on my gitpod site and this was due to AWS adding letters to image file names, the name files had to be changed back in order for them to load.
 
  - AWS S3 bucket also has to be on public to allo users to upload css files
-
-
-
-
 
 ## Credit
 First I would like to thank my mentor Samantha for all the help and then the Code Institute! I would also like to thank all the tutors you have all been amazing and lastly but not least anyone on Slack who reached out and helped with my many problems.
@@ -611,7 +668,7 @@ https://extendsclass.com/python-tester.html
 - used to correct python
 
 Acknowledgements 
--  Firt my mentor Samantha Megan, always givesa great advise and insights!
+-  Firt my mentor Samantha Megan, always gives great advise and insights!
 
 - The Code Institute!
 
