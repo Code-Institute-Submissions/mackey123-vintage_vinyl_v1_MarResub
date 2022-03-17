@@ -592,7 +592,7 @@ If you wish to contribute to this website you can Fork it without affecting the 
 
  - I cannot get the media to be uploaded to my deployed heroku site even after creating a file on the Amazon bucket, I have had the deploying steps done at the start yet these problems were not visble until yesterday when I went to redeploy. I have not solved the issue regarding the images yet and while solving these I seemed to have lost the use of my account button on the main page, it only seems to work when you change the viewport now this was not here earlier, my CSS has started to not be applied to my gitpod site hwoever is working on my deployed site? I have had a tab open with the tutors the last 12 hours and Did not fully solve the bug, eventually got my CSS appplied to my heorku app after geting it to finally deploy, but then as a result I have no images still on my deployed site and I lost the use of my Account button on the home page. These issue are all popping up right before my submission time and I think I will not be able to solve them in that time as most our new.
 
- - Favicon error can appear in dev tools but disappears shortly after loading or refresshed.
+ - Favicon error can appear in dev tools but disappears shortly after loading or page refresshed.
 
  - Upon deployment to Heroku I noticed that images wuld not load on my gitpod site and this was due to AWS adding letters to image file names, the name files had to be changed back in order for them to load.
 
@@ -668,10 +668,10 @@ https://extendsclass.com/python-tester.html
 - used to correct python
 
 Acknowledgements 
--  Firt my mentor Samantha Megan, always gives great advise and insights!
+-  Firt my mentor Samantha Megan, always gives great advise and insights
 
-- The Code Institute!
+- The Code Institute
 
-- The community on slack always a great help!
+- The community on slack always a great help mainly Alex and Suzy for giving me great inspiration and help for the blog and other problems!
 
-- The lovely Tutors who time and time helped me a great deal during this project!
+- The lovely Tutors who time and time helped me a great deal during this project, cannot thank them enough
